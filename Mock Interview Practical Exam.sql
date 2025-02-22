@@ -111,7 +111,7 @@ select emp_id, first_name from emp where emp_id in (select dept_id from departme
 
 create view emp_dept as select e.emp_id, e.first_name, d.dept_name from  emp e join department d on e.emp_id = d.dept_id;
 
-
+truncate table 
 
 
 
